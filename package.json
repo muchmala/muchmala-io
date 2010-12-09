@@ -1,0 +1,21 @@
+{ "name" : "muchmala-io"
+, "version" : "0.0.1"
+, "description" : "Socket server for muchmala"
+, "contributors" :
+ [ "Serge Borbit <serge.borbit@gmail.com>"
+ , "Taras Kunch <taras.kunch@gmail.com>"
+ , "George Miroshnykov <george.miroshnykov@gmail.com>"
+ ]
+, "repositories":
+ { "type" : "git"
+ , "url" : "https://github.com/muchmala/muchmala-io.git"
+ }
+, "dependencies" :
+ { "opts" : "~1"
+ , "socket.io-cluster" : "~0"
+ }
+, "engines" :
+ { "node" : "~0.4"
+ , "npm" : "~1"
+ }
+}
