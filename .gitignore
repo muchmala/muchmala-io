@@ -1,9 +1,3 @@
 .vagrant
 config.local.js
-client/css/styles.css
-client/js/minified.js
-client/img/puzzles/
-utils.db
-index.html
 node_modules
-proxy.json
