@@ -1,5 +1,5 @@
 { "name" : "muchmala-io"
-, "version" : "0.0.1"
+, "version" : "0.0.2"
 , "description" : "Socket server for muchmala"
 , "contributors" :
  [ "Serge Borbit <serge.borbit@gmail.com>"
@@ -13,6 +13,7 @@
 , "dependencies" :
  { "opts" : "~1"
  , "socket.io-cluster" : "~0"
+ , "muchmala-common" : "~0"
  }
 , "engines" :
  { "node" : "~0.4"
