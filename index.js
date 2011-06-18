@@ -46,7 +46,6 @@ var localConfig = {
 var host = localConfig.internalHost || localConfig.externalHost;
 var port = localConfig.internalPort || localConfig.externalPort;
 
-console.log(localConfig, host, port)
 var server = http.createServer();
 var ioNode = ioCluster.makeIoListener(server, {
         REDIS_HOST: config.queue.host,
@@ -56,10 +55,15 @@ var ioNode = ioCluster.makeIoListener(server, {
     });
 
 server.listen(port, host, function() {
-    queue.broadcast('servers', {
+    queue.publisher.publish('servers', {
+        type: 'io',
+        interface: localConfig
+    }, function() {
+        queue.broadcast('servers', {
             type: 'io',
             interface: localConfig
         });
+    })
 });
 
 ioNode.getClientInfo = function(client) {
