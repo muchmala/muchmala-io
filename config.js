@@ -2,7 +2,7 @@ var config = exports;
 
 config.io = {
     externalHost: process.env.MUCHMALA_IO_EXTERNAL_HOST || 'io.muchmala.dev',
-    externalPort: process.env.MUCHMALA_IO_EXTERNAL_PORT || 80,
+    externalPort: process.env.MUCHMALA_IO_EXTERNAL_PORT || 8090,
     internalHost: process.env.MUCHMALA_IO_INTERNAL_HOST || '0.0.0.0',
     internalPort: process.env.MUCHMALA_IO_INTERNAL_PORT || null
 };
